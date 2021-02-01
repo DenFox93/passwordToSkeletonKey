@@ -10,3 +10,8 @@ The skeleton key is defined two times first in the function “kuhl_misc_skeleto
 • Old versions of mimikatz → in the source code file kuhl_m_misc.c(lines:672,700)
     
     BYTE kiwiKey[] = {0x60, 0xba, 0x4f, 0xca, 0xdc, 0x46, 0x6c, 0x7a, 0x03, 0x3c, 0x17, 0x81, 0x94, 0xc0, 0x3d, 0xf6};
+
+We can run it also by directly using wget: 
+
+    wget -qO - https://raw.githubusercontent.com/DenFox93/passwordToSkeletonKey/main/converter.py | python -- - <PASSWORD>
+
