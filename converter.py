@@ -1,6 +1,6 @@
 from sys import argv
 
-password="daniele"
+password=argv[1]
 print("The password inserted is --> " + str(password))
 import hashlib,binascii
 hash = hashlib.new('md4', password.encode('utf-16le')).digest()
