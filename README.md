@@ -1,7 +1,9 @@
 # passwordToSkeletonKey
+This script is used to change the default Master Key(Skeleton Key) of Mimikatz to another one of our choice.
+
 The Skeleton key by default is “mimikatz” that converted to NT hash is “60BA4FCADC466C7A033C178194C03DF6”. This password will work for any account in the domain. 
 
-The skeleton key is defined two times first in the function “kuhl_misc_skeleton_rc4_init” and then in “kuhl_misc_skeleton_rc4_init_decryp”
+The skeleton key in the Mimikatz project is defined two times first in the function “kuhl_misc_skeleton_rc4_init” and then in “kuhl_misc_skeleton_rc4_init_decryp”
 
 • New versions of mimikatz →  in the source code file kuhl_m_misc.c(lines:607,634)as the parameter:
     
